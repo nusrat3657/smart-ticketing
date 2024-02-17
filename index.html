@@ -7,12 +7,14 @@
     <!-- tailwind and daisyUi -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles/style.css">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/eafa7108eb.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class=" lg:my-10 lg:mx-28 mx-5 mt-2 ">
-        <nav class=" mb-5">
+    <header class="lg:my-10 lg:mx-28 mx-5 my-2">
+        <nav class=" font-raleway">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -26,7 +28,7 @@
                         <li><a>Search</a></li>
                     </ul>
                   </div>
-                  <h3 class=" text-3xl font-bold">N-Ticket</h3>
+                  <h3 class=" lg:text-3xl text-2xl lg:font-extrabold font-bold">N-Ticket</h3>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
@@ -37,20 +39,20 @@
                   </ul>
                 </div>
                 <div class="navbar-end flex">
-                    <button class="bg-opacity-10 bg-[#1DD100]  text-[#1DD100] p-3 px-5 rounded-lg flex gap-2 font-bold">Bus <img src="images/bus-icon.png" alt=""></button>
+                    <button class="bg-opacity-10 border-opacity-40 border-[#1DD100] border-2 bg-[#1DD100]  text-[#1DD100] p-3 px-5 rounded-lg flex gap-2 font-bold">Bus <img src="images/bus-icon.png" alt=""></button>
                 </div>
               </div>
         </nav>
     </header>
-    <main class="lg:my-10 lg:mx-28 mx-5 my-2">
+    <main class="lg:mx-28 mx-5">
         <!-- banner section start -->
-        <section>
+        <section class="lg:mb-10 mb-5">
             <div class="hero lg:min-h-screen rounded-3xl" style="background-image: url(images/banner.png);">
                 <div class=" bg-opacity-50"></div>
                 <div class="hero-content text-center text-neutral-content">
                   <div class="">
                     <h1 class="mb-5 lg:text-6xl text-2xl font-bold text-white ">End-to-End Travel with <br><span class="text-[#1DD100]">N Paribahan</span></h1>
-                    <p class="mb-5 lg:max-w-3xl text-sm">N-Ticket is the best online ticket platform for buying tickets.Best & Most Professional Travel Option in. Bangladesh. We have the widest range of luxury inter-city bus.</p>
+                    <p class="mb-5 lg:max-w-3xl text-sm">NR-Ticket is the best online ticket platform for buying tickets.Best & Most Professional Travel Option in. Bangladesh. We have the widest range of luxury inter-city bus.</p>
                     <button class="btn bg-[#1DD100] text-black text-lg border-none">Buy Tickets</button>
                   </div>
                 </div>
@@ -58,15 +60,114 @@
         </section>
         <!-- best offers section start here -->
         <section>
-          <h3 class="text-3xl">Best offers for you</h3>
-          <div>
+          <h3 class="font-raleway lg:text-4xl text-2xl font-semibold text-center mb-4">Best offers for you</h3>
+          <div class="font-inter lg:flex justify-between ">
             <!-- 15% discount -->
-            <div>
-              
+            <div class="bg-[#FFBF0F] lg:h-[220px] lg:w-[630px] lg:p-10 p-4 rounded-2xl lg:mb-10 mb-5 flex justify-between gap-5">
+                <div class="lg:py-4">
+                  <h2 class="lg:text-4xl text-2xl font-extrabold lg:mb-3">15% OFF</h2>
+                  <p class="font-semibold lg:mb-2">on your next purchase</p>
+                  <p>use by January 2024</p>
+                </div>
+                <div class="font-raleway lg:mt-10">
+                  <h2 class="lg:text-3xl text-xl font-bold lg:mb-1">NEW15</h2>
+                  <p>Coupon Code</p>
+                </div>
             </div>
             <!-- 20% discount -->
-            <div>
+            <div class="bg-[#F78C9C] lg:h-[220px] lg:w-[630px] lg:p-10 p-4 rounded-2xl lg:mb-10 mb-5 flex justify-between gap-5">
+              <div class="lg:py-4">
+                <h2 class="lg:text-4xl text-2xl font-extrabold lg:mb-3">20% OFF</h2>
+                <p class="font-semibold lg:mb-2">on your next purchase</p>
+                <p>use by January 2024</p>
+              </div>
+              <div class="font-raleway lg:mt-10">
+                <h2 class="lg:text-3xl text-xl font-bold lg:mb-1">Couple 20</h2>
+                <p>Coupon Code</p>
+              </div>
+          </div>
+          </div>
+          <div class="text-center lg:mb-12 mb-5">
+            <button class="font-raleway border-2 border-[#1DD100] text-[#1DD100] font-bold rounded-lg px-5 py-3">See All Offers</button>
+          </div>
+        </section>
+        <section>
 
+        </section>
+        <!-- paribahan section -->
+        <section class="lg:-mx-28 -mx-5 border-t-[#1DD100] border-t-2 bg-[#F7F8F8] min-h-screen bottom-3 rounded-t-[80px] ">
+          
+          <div class="text-center lg:w-[650px] lg:ml-[450px] lg:mt-28 mt-10 px-5 mb-10">
+            <h3 class="lg:text-4xl font-bold font-raleway mb-5">N.R Paribahan</h3>
+            <p class="font-inter">Save time and enjoy exclusive discounts when you book bus tickets online with us. Compare prices, routes, and operators in one place. Find your perfect ticket. Secure Payments. Instant Confirmations. Easy Booking.</p>
+          </div>
+          <!-- ticket section -->
+          <div class="lg:flex justify-between lg:mx-28 mx-5 lg:p-10 p-2 bg-[#FFFFFF] rounded-3xl lg:mb-10 mb-5">
+            <!-- ticket name -->
+            <div class="lg:w-[870px]">
+              <div class="lg:flex justify-between mb-5">
+                <div class="flex gap-3">
+                  <div class="mt-1 lg:ml-0 ml-3">
+                    <img src="images/bus-logo.png" alt="">
+                  </div>
+                  <div class="lg:mb-0 mb-4">
+                    <h3 class="font-raleway lg:text-3xl text-lg font-bold lg:mb-1">Greenline Paribahan</h3>
+                    <p class="text-sm">Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div>
+                <div>
+                  <button class="bg-opacity-10 text-sm bg-[#1DD100]  text-[#1DD100] p-3 px-5 rounded-lg flex gap-2 font-bold lg:ml-0 ml-20"><img src="images/seat-green.png" alt=""><span class="mt-1 ">40 Seats left</span></button>
+                </div>
+              </div>
+              <div class="bg-[#F7F8F8] rounded-2xl pb-5 px-5">
+                <div class="front-raleway ">
+                  <div class="flex justify-between py-5">
+                    <p>Route</p>
+                    <h4 class="font-semibold">Dhaka - Sylhet</h4>
+                  </div>
+                    <hr>
+                  <div class="flex justify-between py-5">
+                    <p>Departure Time</p>
+                    <h4 class="font-semibold">9:00 PM</h4>
+                  </div>
+                  <hr>
+                </div>
+                <div class="front-inter lg:flex justify-evenly mt-5 ">
+                  <div class="bg-opacity-5 bg-[#030712] rounded-lg p-4 text-sm font-semibold lg:mb-0 mb-3">Boarding Point - Laxmipur</div>
+                  <div class="bg-opacity-5 bg-[#030712] rounded-lg p-4 text-sm font-semibold lg:mb-0 mb-3">Dropping Point - Bogura</div>
+                  <div class="bg-opacity-5 bg-[#030712] rounded-lg p-4 text-sm font-semibold">Est. Time - 11 Hour</div>
+                </div>
+              </div>
+            </div>
+            <!-- ticket price -->
+            <div class="font-raleway text-center lg:p-24 p-10 ">
+              <img class="lg:ml-5  ml-20 mb-5" src="images/fare.png" alt="">
+              <h3 class="text-2xl font-bold">550 Taka</h3>
+              <p class="text-opacity-60 text-[#030712] font-semibold">Per Seat</p>
+            </div>
+          </div>
+
+          <!-- seat section -->
+          <div class="lg:mx-28 mx-5 lg:p-10  bg-[#FFFFFF] rounded-3xl p-10">
+            <!-- section-1 -->
+            <div>
+              <h3 class="font-raleway text-xl font-bold mb-5">Select Your Seat</h3>
+              <hr>
+              <div class="flex justify-between my-5">
+                <div class="flex gap-2">
+                  <img src="images/seat-gray.png" alt="">
+                  <p>Available</p>
+                </div>
+                <div class="flex gap-2">
+                  <img src="images/seat-green-filled.png" alt="">
+                  <p class="text-[#1DD100]">Selected</p>
+                </div>
+              </div>
+              <hr>
+            </div>
+            <!-- section-2 -->
+            <div class=" bg-opacity-5 bg-[#030712] w-20">
+              <div class=" rounded-lg p-4 text-sm font-semibold lg:mb-0 mb-3 "><img src="images/tabler-icon-steering-wheel.png" alt=""></div>
             </div>
           </div>
         </section>
