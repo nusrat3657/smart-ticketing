@@ -4,18 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Ticketing</title>
+    <!-- tailwind and daisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/eafa7108eb.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
-
+    <header class=" lg:my-10 lg:mx-28 mx-5 mt-2 ">
+        <nav class=" mb-5">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="lg:btn btn-ghost lg:hidden mr-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <h3 class=" text-3xl font-bold">N-Ticket</h3>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex">
+                    <button class="bg-opacity-10 bg-[#1DD100]  text-[#1DD100] p-3 px-5 rounded-lg flex gap-2 font-bold">Bus <img src="images/bus-icon.png" alt=""></button>
+                </div>
+              </div>
         </nav>
     </header>
-    <main>
+    <main class="lg:my-10 lg:mx-28 mx-5 my-2">
+        <!-- banner section start -->
+        <section>
+            <div class="hero lg:min-h-screen rounded-3xl" style="background-image: url(images/banner.png);">
+                <div class=" bg-opacity-50"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="">
+                    <h1 class="mb-5 lg:text-6xl text-2xl font-bold text-white ">End-to-End Travel with <br><span class="text-[#1DD100]">N Paribahan</span></h1>
+                    <p class="mb-5 lg:max-w-3xl text-sm">N-Ticket is the best online ticket platform for buying tickets.Best & Most Professional Travel Option in. Bangladesh. We have the widest range of luxury inter-city bus.</p>
+                    <button class="btn bg-[#1DD100] text-black text-lg border-none">Buy Tickets</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- best offers section start here -->
+        <section>
+          <h3 class="text-3xl">Best offers for you</h3>
+          <div>
+            <!-- 15% discount -->
+            <div>
+              
+            </div>
+            <!-- 20% discount -->
+            <div>
 
+            </div>
+          </div>
+        </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
