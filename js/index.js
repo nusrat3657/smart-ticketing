@@ -101,7 +101,19 @@ for(let seat of seatButtons){
         }
     })
     
-    
+    document.getElementById('phone').addEventListener('keyup', function(e){
+        const nextButton = document.getElementById('btn-next');
+        const text = e.target.value;
+        const phoneText = parseInt(text);
+        
+        if (phoneText) {
+            nextButton.removeAttribute('disabled');
+        }
+        else {
+            nextButton.setAttribute('disabled', true);
+        }
+        console.log(typeof phoneText);
+    })
 
 
 function setInnerText(id, value) {
