@@ -46,7 +46,7 @@ for(let seat of seatButtons){
             td.innerText = placeTicket;
             
             const td2 = document.createElement('td');
-            td2.innerText = "AC_Business";
+            td2.innerText = "Economoy";
             const td3 = document.createElement('td');
             td3.innerText = price;
 
@@ -73,17 +73,35 @@ for(let seat of seatButtons){
         
     })
 }
-    //coupon function
+
     const grandTotal = document.getElementById('grand-total');
     document.getElementById('coupon-btn').addEventListener('click', function(){
-        const couponCode = document.getElementById('coupon-field').value;
-        if (couponCode === "NEW15") {
+        if (countSeat === 4) {
+            const couponCode = document.getElementById('coupon-field').value;
+
+            if (couponCode === "NEW15") {
             const discount = totalPrice * 0.15;
             const totalDiscount = totalPrice - discount;
+            grandTotal.innerText = totalDiscount;    
+            const secret = document.getElementById('confirm-delete');
+            secret.style.display = 'none';
+            // console.log(totalDiscount);
+            }
+            else if (couponCode === "Couple 20") {
+            const discount = totalPrice * 0.2;
+            const totalDiscount = totalPrice - discount;
             grandTotal.innerText = totalDiscount;
-            console.log(totalDiscount);
+            const secret = document.getElementById('confirm-delete');
+            secret.style.display = 'none';
+            // console.log(totalDiscount);
+            }
+            else{
+            
+            }
         }
     })
+    
+    
 
 
 function setInnerText(id, value) {
