@@ -10,6 +10,7 @@ for(let seat of seatButtons){
         if (countSeat < 4) {
             countSeat = countSeat + 1;
             seat.style.backgroundColor = "#1DD100";
+            seat.setAttribute("disabled", true);
             setInnerText('seat-count', countSeat);
             const seatAdd = document.getElementById('seat-count');
 
@@ -27,16 +28,11 @@ for(let seat of seatButtons){
 
             seatSub.innerText = subSeat;
 
-            const placeTicket = e.target.parentNode.childNodes[3].innerText;
-            // const place = document.getElementById("seat-button");
-            // const placeTicket = document.querySelector("kbd", place).innerText;
+            const placeTicket = seat.innerText;
             // console.log(placeTicket);
             
             const price = parseFloat(document.querySelector("h5").innerText);
-            // console.log(price);
-
-            // const price = e.target
-            // console.log(e.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes);
+ 
 
             const selectedContainer = document.getElementById('selected-ticket-container');
 
@@ -67,6 +63,7 @@ for(let seat of seatButtons){
         }
         else{
             countSeat = countSeat;
+            alert("You do not select more than 4 tickets");
         }
         
     
