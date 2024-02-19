@@ -62,15 +62,30 @@ for(let seat of seatButtons){
 
             const grandPrice = document.getElementById('grand-total');
             grandPrice.innerText = totalPrice;
+
+            
         }
         else{
             countSeat = countSeat;
         }
         
-
+    
         
     })
 }
+    //coupon function
+    const grandTotal = document.getElementById('grand-total');
+    document.getElementById('coupon-btn').addEventListener('click', function(){
+        const couponCode = document.getElementById('coupon-field').value;
+        if (couponCode === "NEW15") {
+            const discount = totalPrice * 0.15;
+            const totalDiscount = totalPrice - discount;
+            grandTotal.innerText = totalDiscount;
+            console.log(totalDiscount);
+        }
+    })
+
+
 function setInnerText(id, value) {
     const setText = document.getElementById(id);
     setText.innerText = value;
