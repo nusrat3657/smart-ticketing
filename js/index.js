@@ -60,7 +60,8 @@ for(let seat of seatButtons){
             totalPrice += price;
             document.getElementById('total-price').innerText = totalPrice;
 
-            const grandPrice.innerText = totalPrice;
+            const grandPrice = document.getElementById('grand-total');
+            grandPrice.innerText = totalPrice;
         }
         else{
             countSeat = countSeat;
